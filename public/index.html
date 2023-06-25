@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Real Time Chat App</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <!-- Form to enter into the Chatroom -->
+    <div class="form-container">
+        <h1>Join Chat Room</h1>
+        <form class="form" action="">
+            <!-- <p>Username</p> -->
+            <input id="username-input" type="text" placeholder="Please enter your username" />
+            <button id="join-button" type="submit">Join Chat</button>
+        </form>
+    </div>
+
+    <!-- Chatroom -->
+    <div class="chatroom-container">
+        <div class="chatroom-header">Chat Room</div>
+        <div class="messages" id="message-container">
+            <!-- <div class="message received">Hey</div>
+            <div class="message sent">Hii</div>
+            <div class="message sent">How are you ?</div> -->
+        </div>
+        <div class="delivery">
+            <input id="message-input" type="text" placeholder="Start typing . . .">
+            <button id="send-button">Send</button>
+        </div>
+    </div>
+
+    <!-- injecting CDN for socket IO || standalone build -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
+
+<!-- 
+    1. transfer all the files to a public folder;
+    2. see commands.txt
+ -->

@@ -1,0 +1,37 @@
+->  npm init -y (to populate the following questions with default package values)
+installs package.json file
+
+-> npm install express socket.io
+package for backend dev with node.json
+installs package-lock.json
+
+-> Ctrl + C => kills + re-runs the terminal
+
+-> npm install --save-dev nodemon
+
+-> node server.js (don't use this)
+run my server using node.js
+-> npx nodemon server.js
+to run server through nodemon
+
+
+npm  => install
+npx => execute (npm run)
+
+-> "start": "nodemon server.js"
+inserting this in pacakge.json to reduce and customize the code
+restart the server after configuration change 
+
+-> npm run start OR npm start
+
+
+"main": "script.js"
+change if required
+
+
+-> npm i/npm install 
+downloads all the node_modules
+
+-> .gitignore
+any file added here will be ignored by git while commiting, as these files can be generated via internet
+

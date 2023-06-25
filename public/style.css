@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* landing page */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 35vh;
+
+  border: 5px solid black;
+  margin: 200px 300px 200px 300px;
+  border-radius: 10px;
+
+  line-height: 70px;
+  /* display: none; */
+}
+
+#username {
+  width: 25vw;
+  padding: 8px;
+}
+
+#join-button {
+  padding: 10px 20px 10px 20px;
+  font-size: 1.5rem; /* check this once */
+}
+
+#username,
+#join-button {
+  border-radius: 10px;
+}
+
+/* chatroom */
+.chatroom-container {
+  display: none;
+  height: 85vh;
+  width: 100%;
+}
+
+.chatroom-header {
+  background-color: black;
+  color: white;
+
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 2rem;
+}
+
+.messages {
+  display: flex;
+  flex-direction: column;
+  height: 75vh;
+}
+
+.message {
+  background-color: #e1e1e1;
+  width: fit-content;
+
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  margin: 0.5rem;
+  border-radius: 18px;
+  font-size: 1.2rem;
+}
+
+.sent {
+  /* if not flex then use align-self */
+  align-self: flex-end;
+}
+
+.delivery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0 25px 8px 25px;
+  gap: 10px;
+}
+
+#message-input {
+  width: 50vw;
+}
+
+#message-input,
+#send-button {
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 0.9rem;
+}
+
+#send-button {
+  width: 8vw;
+}
